@@ -1,0 +1,117 @@
+html {
+    background: url("../images/others/background.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Spectral', serif;
+}
+
+@media screen and (max-width: 400px) {
+    #spellDetailsGoHere {
+        display: none !important;
+    }
+}
+
+#spellsGoHere {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.spellInfo {
+    width: 300px;
+    background-color: transparent;
+    margin: 20px auto;
+    color: #E7E7E7;
+    z-index: 999;
+
+    font-size: 88%;
+    text-align: center;
+    display: inline-block;
+
+    border: 10px solid transparent;
+    border-image-source: url("../images/others/borderImage.png");
+    border-image-width: 20px 40px;
+    border-image-repeat: round;
+    border-image-slice: 30 50 fill;
+    border-spacing: 0;
+}
+
+
+
+.spellInfo .spellName {
+    height: 100px;
+    text-align: center;
+    border: 1px solid #282828;
+    background: transparent url("../images/others/spellNameBg.png");
+}
+
+.favSpell {
+    color: gold;
+}
+
+.spellInfo .spellName h2 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    text-transform: uppercase !important;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.spellInfo .buttonClass {
+    width: 300px;
+    color: #E7E7E7;
+    border: 1px solid #282828;
+    background: transparent url("../images/others/spellNameBg.png");
+    padding: 10px;
+}
+
+.spellInfo .buttonClass:hover {
+    color: grey;
+}
+
+#spellDetailsGoHere .textToRight {
+    float: right;
+}
+
+#spellDetailsGoHere {
+    position: sticky;
+    top: 0;
+    height: 500px;
+    width: 300px;
+    background-color: transparent;
+    margin: 20px auto;
+    color: #E7E7E7;
+    z-index: 999;
+
+    font-size: 88%;
+    float: right;
+    display: inline-block;
+
+    border: 10px solid transparent;
+    border-image-source: url("../images/others/borderImage.png");
+    border-image-width: 20px 40px;
+    border-image-repeat: round;
+    border-image-slice: 30 50 fill;
+    border-spacing: 0;
+}
+
+#spellDetailsGoHere .spellName h2, #spellDetailsGoHere h2 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    text-transform: uppercase !important;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#spellDetailsGoHere .spellName {
+    height: 100px;
+    text-align: center;
+    border: 1px solid #282828;
+    background: transparent url("../images/others/spellNameBg.png");
+}
