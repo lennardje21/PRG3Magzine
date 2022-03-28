@@ -3,11 +3,13 @@ window.localStorage;
 
 //global vars
 let fetchLocation = 'webservice/index.php';
-let screenWidth = screen.availWidth;
+let screenWidth = document.documentElement.clientWidth;
 
 function init()
 {
     getSpells();
+    console.log(screenWidth);
+
 }
 
 function getSpells() {
@@ -26,25 +28,26 @@ function getSpells() {
 
 function createTheThing(data) {
     let spellInfo = document.getElementById('spellsGoHere');
-    for (let i = 0; i < data.length; i++) {
+    for (let spell of data) {
         let div = document.createElement("div");
         div.classList.add("spellInfo");
+        div.dataset.name = spell.spellName;
 
         let classNameDiv = document.createElement("div")
         classNameDiv.classList.add("spellName");
-        if (data[i].spellName === localStorage.getItem(`favorite${data[i].id}`)){
+        if (spell.spellName === localStorage.getItem(`favorite${spell.id}`)){
             classNameDiv.classList.add("favSpell");
         } else {
             classNameDiv.classList.remove("favSpell");
         }
 
         let h2 = document.createElement("h2");
-        h2.innerHTML = data[i].spellName;
+        h2.innerHTML = spell.spellName;
         classNameDiv.appendChild(h2);
         div.appendChild(classNameDiv);
 
         let img = document.createElement("img");
-        img.src = `images/${data[i].spellImage}`;
+        img.src = `images/${spell.spellImage}`;
         div.appendChild(img);
 
         //button to make something a favorite spell
@@ -53,7 +56,7 @@ function createTheThing(data) {
         favoriteButton.id = "favoriteTest";
         let inStorage;
 
-        if (data[i].spellName === localStorage.getItem(`favorite${data[i].id}`)){
+        if (spell.spellName === localStorage.getItem(`favorite${spell.id}`)){
             favoriteButton.innerHTML = 'Remove from favorites';
             inStorage = true;
         } else {
@@ -61,94 +64,91 @@ function createTheThing(data) {
             inStorage = false
         }
 
-        //favoriteButton.addEventListener("click" )
-
-        favoriteButton.onclick = function () {
+        favoriteButton.addEventListener("click", () => {
             if (inStorage === false) {
-                localStorage.setItem(`favorite${data[i].id}`, `${data[i].spellName}`);
+                localStorage.setItem(`favorite${spell.id}`, `${spell.spellName}`);
                 favoriteButton.innerHTML = "Remove from favorites";
                 classNameDiv.classList.add("favSpell");
                 inStorage = true;
             } else {
-                localStorage.removeItem(`favorite${data[i].id}`)
+                localStorage.removeItem(`favorite${spell.id}`)
                 favoriteButton.innerHTML = "Add to favorites";
                 classNameDiv.classList.remove("favSpell");
                 inStorage = false;
             }
-        }
+        });
+
         div.appendChild(favoriteButton);
 
         //button to show the details of a spell
         let detailsButton = document.createElement("button");
         detailsButton.classList.add("buttonClass");
         detailsButton.innerHTML = "Show details";
-        detailsButton.onclick = function () {
-                fetch(`${fetchLocation}?id=${data[i].id}`)
-                    .then((response) => {
-                        if (!response.ok) {
-                            throw new Error(response.statusText);
-                        }
-                        return response.json();
-                    })
-                    .then(showDetails)
-                    .catch(ajaxErrorHandler)
-            };
-        div.appendChild(detailsButton);
+        detailsButton.addEventListener("click",  () => {
+            fetch(`${fetchLocation}?id=${spell.id}`)
+                .then((response) => {
+                    if (!response.ok) {
+                        throw new Error(response.statusText);
+                    }
+                    return response.json();
+                })
+                .then(showDetails)
+                .catch(ajaxErrorHandler)
+        });
 
+        div.appendChild(detailsButton);
 
         spellInfo.appendChild(div);
     }
 }
 
-//  function favoriteOrNot()
 
-function showDetails(data) {
-    console.log(screenWidth);
-    if (screenWidth > 400) {
-        //Haal de div op waar de data in moet komen
-        let spellDetails = document.getElementById("spellDetailsGoHere")
-        //Leegt de div zodat hij niet vol loopt
-        spellDetails.innerHTML = '';
-
-        //creëer een h2 en zet er data in
-        let spellName = document.createElement("div")
-        spellName.classList.add("spellName");
-
-        let spellNameH2 = document.createElement("h2");
-        spellNameH2.innerHTML = data.spellName + ' Details:';
-        spellName.appendChild(spellNameH2);
-
-        spellDetails.appendChild(spellName);
+function showDetails(spell) {
 
 
-        let spellType = document.createElement("div");
-        spellType.innerHTML = '<br><b>Spell Type:</b> ';
-        spellDetails.appendChild(spellType);
+    //Haal de div op waar de data in moet komen
+    let spellDetails = document.getElementById("spellDetailsGoHere");
+    //Leegt de div zodat hij niet vol loopt
+    spellDetails.innerHTML = '';
 
-        let spellTypeDiv = document.createElement("div");
-        spellTypeDiv.classList.add("textToRight");
-        spellTypeDiv.innerHTML = data.spellType;
-        spellType.appendChild(spellTypeDiv);
+    //creëer een h2 en zet er data in
+    let spellName = document.createElement("div")
+    spellName.classList.add("spellName");
+
+    let spellNameH2 = document.createElement("h2");
+    spellNameH2.innerHTML = spell.spellName + ' Details:';
+    spellName.appendChild(spellNameH2);
+
+    spellDetails.appendChild(spellName);
 
 
-        let spellBonus = document.createElement("div");
-        spellBonus.innerHTML = '<b>Bonus:</b> ';
+    let spellType = document.createElement("div");
+    spellType.innerHTML = '<br><b>Spell Type:</b> ';
+    spellDetails.appendChild(spellType);
 
-        let spellBonusDiv = document.createElement("div")
-        spellBonusDiv.classList.add("textToRight")
-        spellBonusDiv.innerHTML = data.bonus;
-        spellBonus.appendChild(spellBonusDiv);
+    let spellTypeDiv = document.createElement("div");
+    spellTypeDiv.classList.add("textToRight");
+    spellTypeDiv.innerHTML = spell.spellType;
+    spellType.appendChild(spellTypeDiv);
 
-        spellDetails.appendChild(spellBonus);
 
-        //
-        let descriptionDiv = document.createElement("div");
-        descriptionDiv.innerHTML = '<br>' + data.description;
-        spellDetails.appendChild(descriptionDiv);
+    let spellBonus = document.createElement("div");
+    spellBonus.innerHTML = '<b>Bonus:</b> ';
 
-        let FPCostDiv = document.createElement("div");
-        FPCostDiv.innerHTML = 'FP Cost: ' + data.FPCost;
-    }
+    let spellBonusDiv = document.createElement("div")
+    spellBonusDiv.classList.add("textToRight")
+    spellBonusDiv.innerHTML = spell.bonus;
+    spellBonus.appendChild(spellBonusDiv);
+
+    spellDetails.appendChild(spellBonus);
+
+    //
+    let descriptionDiv = document.createElement("div");
+    descriptionDiv.innerHTML = '<br>' + spell.description;
+    spellDetails.appendChild(descriptionDiv);
+
+    let FPCostDiv = document.createElement("div");
+    FPCostDiv.innerHTML = 'FP Cost: ' + spell.FPCost;
 }
 
 function ajaxErrorHandler(data){
