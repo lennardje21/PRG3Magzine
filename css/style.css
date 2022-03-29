@@ -7,9 +7,13 @@ html {
     font-family: 'Spectral', serif;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 655px) {
     #spellDetailsGoHere {
-        display: none !important;
+        position: sticky !important;
+        justify-content: space-between !important;
+        z-index: 1000 !important;
+        background: black !important;
+        float: none !important;
     }
 }
 
@@ -61,7 +65,7 @@ html {
     margin-bottom: 10px;
 }
 
-.spellInfo .buttonClass {
+.spellInfo .buttonClass{
     width: 300px;
     color: #E7E7E7;
     border: 1px solid #282828;
@@ -69,12 +73,14 @@ html {
     padding: 10px;
 }
 
+
 .spellInfo .buttonClass:hover {
     color: grey;
 }
 
 #spellDetailsGoHere .textToRight {
     float: right;
+    margin-right: 10px;
 }
 
 #spellDetailsGoHere {
@@ -89,7 +95,7 @@ html {
 
     font-size: 88%;
     float: right;
-    display: inline-block;
+    display: none;
 
     border: 10px solid transparent;
     border-image-source: url("../images/others/borderImage.png");
@@ -114,4 +120,18 @@ html {
     text-align: center;
     border: 1px solid #282828;
     background: transparent url("../images/others/spellNameBg.png");
+}
+
+#spellDetailsGoHere .buttonClass {
+    width: 300px;
+    color: #E7E7E7;
+    border: 1px solid #282828;
+    background: transparent url("../images/others/spellNameBg.png");
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+#spellDetailsGoHere .buttonClass:hover {
+    color: grey;
 }

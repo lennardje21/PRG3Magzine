@@ -3,27 +3,23 @@ window.localStorage;
 
 //global vars
 let fetchLocation = 'webservice/index.php';
-let screenWidth = document.documentElement.clientWidth;
 
 function init()
 {
-    getSpells();
-    console.log(screenWidth);
-
+    ajaxRequest(fetchLocation, createTheThing);
 }
 
-function getSpells() {
-    fetch(fetchLocation)
+const ajaxRequest = (url, func) => {
+    fetch(url)
         .then((response) => {
             if (!response.ok) {
                 throw new Error(response.statusText);
             }
             return response.json();
         })
-        .then(createTheThing)
+        .then(func)
         .catch(ajaxErrorHandler);
 }
-
 
 
 function createTheThing(data) {
@@ -84,16 +80,10 @@ function createTheThing(data) {
         let detailsButton = document.createElement("button");
         detailsButton.classList.add("buttonClass");
         detailsButton.innerHTML = "Show details";
+
         detailsButton.addEventListener("click",  () => {
-            fetch(`${fetchLocation}?id=${spell.id}`)
-                .then((response) => {
-                    if (!response.ok) {
-                        throw new Error(response.statusText);
-                    }
-                    return response.json();
-                })
-                .then(showDetails)
-                .catch(ajaxErrorHandler)
+            ajaxRequest(`${fetchLocation}?id=${spell.id}`, showDetails);
+
         });
 
         div.appendChild(detailsButton);
@@ -104,12 +94,11 @@ function createTheThing(data) {
 
 
 function showDetails(spell) {
-
-
     //Haal de div op waar de data in moet komen
     let spellDetails = document.getElementById("spellDetailsGoHere");
     //Leegt de div zodat hij niet vol loopt
     spellDetails.innerHTML = '';
+    spellDetails.style.display = "block";
 
     //creëer een h2 en zet er data in
     let spellName = document.createElement("div")
@@ -142,15 +131,54 @@ function showDetails(spell) {
 
     spellDetails.appendChild(spellBonus);
 
-    //
+    let FPCost = document.createElement("div");
+    FPCost.innerHTML = '<b>FP Cost:</b> ';
+
+    let FPCostDiv = document.createElement("div");
+    FPCostDiv.classList.add("textToRight");
+    FPCostDiv.innerHTML = spell.FPCost;
+    FPCost.appendChild(FPCostDiv);
+
+    spellDetails.appendChild(FPCost);
+
+    //haalt de description op
     let descriptionDiv = document.createElement("div");
     descriptionDiv.innerHTML = '<br>' + spell.description;
     spellDetails.appendChild(descriptionDiv);
 
-    let FPCostDiv = document.createElement("div");
-    FPCostDiv.innerHTML = 'FP Cost: ' + spell.FPCost;
-}
 
+    //knop om het details veld af te sluiten
+    let closeDetails = document.createElement("button")
+    closeDetails.classList.add("buttonClass");
+    closeDetails.addEventListener("click", () => {
+        spellDetails.style.display = "none";
+    });
+    closeDetails.innerHTML = "close details";
+    spellDetails.appendChild(closeDetails);
+
+}
+/*
+function favorite(data){
+    let clickedItem = data.target;
+    console.log(clickedItem);
+    if (clickedItem.nodeName !== "BUTTON") {
+        return;
+    }
+
+    if (inStorage === false) {
+        localStorage.setItem(`favorite${data.id}`, `${data.spellName}`);
+        favoriteButton.innerHTML = "Remove from favorites";
+        classNameDiv.classList.add("favSpell");
+        inStorage = true;
+    } else {
+        localStorage.removeItem(`favorite${data.id}`)
+        favoriteButton.innerHTML = "Add to favorites";
+        classNameDiv.classList.remove("favSpell");
+        inStorage = false;
+    }
+
+}
+*/
 function ajaxErrorHandler(data){
     console.log(data);
 }

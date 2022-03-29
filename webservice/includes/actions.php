@@ -616,7 +616,7 @@ In the time when there was no Erdtree, death was burned in ghostflame. Deathbird
             "FPCost" => 36
         ],
         21 => [
-            "spellName" => "",
+            "spellName" => "Fia's Mist",
             "bonus" => "Death",
             "spellType" => "Sorceries",
             "description" => "Sorcery of Fia, the Deathbed Companion.<br>
@@ -627,7 +627,7 @@ This sorcery was developed to oppose the Roundtable Hold, and is effective only 
             "FPCost" => 25
         ],
         22 => [
-            "spellName" => "",
+            "spellName" => "Found Rain of Stars",
             "bonus" => "Primeval",
             "spellType" => "Sorceries",
             "description" => "The eldest primeval sorcery, said to have been discovered by an
@@ -643,7 +643,7 @@ stars' amber rained down on this land.",
             "FPCost" => 32
         ],
         23 => [
-            "spellName" => "",
+            "spellName" => "Freezing Mist",
             "bonus" => "Cold",
             "spellType" => "Sorceries",
             "description" => "Sorcery said to have been used by the old snow witch.<br>
@@ -655,7 +655,7 @@ The snowy crone taught the young Ranni to fear the dark moon as she imparted her
             "FPCost" => 20
         ],
         24 => [
-            "spellName" => "",
+            "spellName" => "Frozen Armament",
             "bonus" => "Cold",
             "spellType" => "Sorceries",
             "description" => "
@@ -668,7 +668,7 @@ The snowy crone taught the young Ranni to fear the dark moon as she imparted her
             "FPCost" => 20
         ],
         25 => [
-            "spellName" => "",
+            "spellName" => "Gavel of Haima",
             "bonus" => "Glintstone",
             "spellType" => "Sorceries",
             "description" => "One of the glintstone sorceries of the Academy of Raya Lucaria.<br>
@@ -680,7 +680,7 @@ Drawn from the scholarly conspectus of Haima, the adjudicator of the academy, th
             "FPCost" => 25
         ],
         26 => [
-            "spellName" => "",
+            "spellName" => "Gelmir's Fury",
             "bonus" => "Magma",
             "spellType" => "Sorceries",
             "description" => "One of the sorceries developed from the magma of Mt. Gelmir.<br>
@@ -693,7 +693,7 @@ serpents.",
             "FPCost" => 27
         ],
         27 => [
-            "spellName" => "",
+            "spellName" => "Glintblade Phalanx",
             "bonus" => "Glintblade",
             "spellType" => "Sorceries",
             "description" => "One of the sorceries of the Carian royal family.<br>
@@ -708,7 +708,7 @@ foes, striking in waves of steel and sorcery.",
             "FPCost" => 20
         ],
         28 => [
-            "spellName" => "",
+            "spellName" => "Glintstone Arc",
             "bonus" => "Glintstone",
             "spellType" => "Sorceries",
             "description" => "One of the glintstone sorceries of the Academy of Raya Lucaria.<br>
@@ -722,7 +722,7 @@ Fools often roam in packs.",
             "FPCost" => 10
         ],
         29 => [
-            "spellName" => "",
+            "spellName" => "Glintstone Cometshard",
             "bonus" => "Glintstone",
             "spellType" => "Sorceries",
             "description" => "One of the glintstone sorceries of the Academy of Raya Lucaria.<br>
@@ -736,7 +736,7 @@ A sorcery of the Karolos Conspectus, the most venerable of the academy.
             "FPCost" => 19
         ],
         30 => [
-            "spellName" => "",
+            "spellName" => "Glintstone Icecrag",
             "bonus" => "Cold",
             "spellType" => "Sorceries",
             "description" => "Sorcery said to have been used by the old snow witch.<br>
@@ -749,7 +749,7 @@ as she imparted her cold sorcery.",
             "FPCost" => 12
         ],
         31 => [
-            "spellName" => "",
+            "spellName" => "Glintstone Pebble",
             "bonus" => "Glintstone",
             "spellType" => "Sorceries",
             "description" => "The most basic glintstone sorcery of the Academy of Raya Lucaria.<br>
@@ -761,7 +761,7 @@ This is a universal first step on the journey to true knowledge of sorcery.",
             "FPCost" => 7
         ],
         32 => [
-            "spellName" => "",
+            "spellName" => "Glintstone Stars",
             "bonus" => "Glintstone",
             "spellType" => "Sorceries",
             "description" => "One of the glintstone sorceries of the Academy of Raya Lucaria.<br>
@@ -774,7 +774,7 @@ A sorcery of the Olivinus Conspectus, which attracts sorcerers from Sellia, Town
             "FPCost" => 14
         ],
         33 => [
-            "spellName" => "",
+            "spellName" => "Gravity Well",
             "bonus" => "Gravity",
             "spellType" => "Sorceries",
             "description" => "One of the glintstone sorceries that manipulates gravitational forces.<br>
@@ -786,7 +786,7 @@ A gravitational technique studied by the young Radahn. His master was an Alabast
             "FPCost" => 12
         ],
         34 => [
-            "spellName" => "",
+            "spellName" => "Great Glintstone Shard",
             "bonus" => "Glintstone",
             "spellType" => "Sorceries",
             "description" => "One of the glintstone sorceries of the Academy of Raya Lucaria.<br>
@@ -798,7 +798,7 @@ Those unworthy of the stone crown typically end their brief journey into sorcery
             "FPCost" => 12
         ],
         35 => [
-            "spellName" => "",
+            "spellName" => "Great Oracular Bubble",
             "bonus" => "Bubbles",
             "spellType" => "Sorceries",
             "description" => "Sorcery of the claymen who served as priests in the ancient dynasty.<br>
@@ -810,7 +810,7 @@ The claymen search for lost oracles within their bubbles.",
             "FPCost" => 16
         ],
         36 => [
-            "spellName" => "",
+            "spellName" => "Greatblade Phalanx",
             "bonus" => "Glintblade",
             "spellType" => "Sorceries",
             "description" => "One of the sorceries of the Carian royal family.<br>
@@ -822,7 +822,7 @@ They were the comrades of the young Rennala, bound by oath.",
             "FPCost" => 35
         ],
         37 => [
-            "spellName" => "",
+            "spellName" => "Loretta's Greatbow",
             "bonus" => "Glintblade",
             "spellType" => "Sorceries",
             "description" => "Sorcery used by Royal Knight Loretta.<br>
@@ -834,7 +834,7 @@ It is said that the bow was Loretta's favored weapon.",
             "FPCost" => 28
         ],
         38 => [
-            "spellName" => "",
+            "spellName" => "Loretta's Mastery",
             "bonus" => "Glintblade",
             "spellType" => "Sorceries",
             "description" => "Sorcery used by Loretta, Knight of the Haligtree.<br>
@@ -846,7 +846,7 @@ Developed by Loretta after her long, bloody journey to seek out a place where th
             "FPCost" => 43
         ],
         39 => [
-            "spellName" => "",
+            "spellName" => "Lucidity",
             "bonus" => "???",
             "spellType" => "Sorceries",
             "description" => "One of the sorceries of the Carian royal family.<br>
@@ -858,7 +858,7 @@ The Carian knights never waver.",
             "FPCost" => 10
         ],
         40 => [
-            "spellName" => "",
+            "spellName" => "Magic Downpour",
             "bonus" => "Glintstone",
             "spellType" => "Sorceries",
             "description" => "One of the sorceries of the Carian royal family.<br>
@@ -872,7 +872,7 @@ of the old concord.",
             "FPCost" => 20
         ],
         41 => [
-            "spellName" => "",
+            "spellName" => "Magic Glintblade",
             "bonus" => "Glintblade",
             "spellType" => "Sorceries",
             "description" => "An old sorcery of the Carian Royal Family.<br>
@@ -884,7 +884,7 @@ Said to be the prototype of the sword-phalanx soerceries wielded by royal enchan
             "FPCost" => 12
         ],
         42 => [
-            "spellName" => "",
+            "spellName" => "Magma Shot",
             "bonus" => "Magma",
             "spellType" => "Sorceries",
             "description" => "One of the sorceries developed from the magma of Mt. Gelmir.<br>
@@ -895,7 +895,7 @@ After discovering the ancient hexes of Gelmir, Rykard, son of Queen Rennala, bro
             "FPCost" => 24
         ],
         43 => [
-            "spellName" => "",
+            "spellName" => "Meteorite",
             "bonus" => "Gravity",
             "spellType" => "Sorceries",
             "description" => "One of the glintstone sorceries that manipulates gravitational forces.<br>
@@ -907,7 +907,7 @@ The sorcery originates from the Onyx Lords, who had skin of stone, and were call
             "FPCost" => 30
         ],
         44 => [
-            "spellName" => "",
+            "spellName" => "Meteorite of Astel",
             "bonus" => "Gravity",
             "spellType" => "Sorceries",
             "description" => "One of the glintstone sorceries that manipulates gravitational forces.<br>
@@ -919,7 +919,7 @@ A manifestation of the power with which Astel leveled the Eternal City.",
             "FPCost" => 60
         ],
         45 => [
-            "spellName" => "",
+            "spellName" => "Night Comet",
             "bonus" => "Invisibility",
             "spellType" => "Sorceries",
             "description" => "One of the night sorceries of Sellia, Town of Sorcery.<br>
@@ -931,7 +931,7 @@ The Sellian sorcerers were assassins, and it is said that they often hunted thei
             "FPCost" => 24
         ],
         46 => [
-            "spellName" => "",
+            "spellName" => "Night Maiden's Mist",
             "bonus" => "Invisibility",
             "spellType" => "Sorceries",
             "description" => "One of the night sorceries of Sellia, Town of Sorcery.<br>
@@ -945,7 +945,7 @@ originates from the maiden of that place.",
             "FPCost" => 20
         ],
         47 => [
-            "spellName" => "",
+            "spellName" => "Night Shard",
             "bonus" => "Invisibility",
             "spellType" => "Sorceries",
             "description" => "One of the night sorceries of Sellia, Town of Sorcery.<br>
@@ -956,7 +956,7 @@ The Sellian sorcerers where assassins, and it is said that they often hunted the
             "FPCost" => 7
         ],
         48 => [
-            "spellName" => "",
+            "spellName" => "Oracle BUbbles",
             "bonus" => "Bubbles",
             "spellType" => "Sorceries",
             "description" => "Sorcery of the claymen who served as priests in the ancient
@@ -970,7 +970,7 @@ The claymen search for lost oracles within their bubbles.",
             "FPCost" => 12
         ],
         49 => [
-            "spellName" => "",
+            "spellName" => "Rancorcall",
             "bonus" => "Death",
             "spellType" => "Sorceries",
             "description" => "Sorcery of the servants of Death.<br>
@@ -981,7 +981,7 @@ Once through lost, this ancient death hex was rediscovered by the necromancer Ga
             "FPCost" => 14
         ],
         50 => [
-            "spellName" => "",
+            "spellName" => "Ranni's Dark Moon",
             "bonus" => "Full Moon",
             "spellType" => "Sorceries",
             "description" => "Legendary sorcery associated with the Carian queen. <br>
@@ -992,7 +992,7 @@ The moon was encountered by a young Ranni, left by the hand of her mother, Renna
             "FPCost" => 62
         ],
         51 => [
-            "spellName" => "",
+            "spellName" => "Rennala's Full Moon",
             "bonus" => "Full Moon",
             "spellType" => "Sorceries",
             "description" => "Sorcery associated with the Carian queen.<br>
@@ -1003,7 +1003,7 @@ Queen Rennala encountered this enchanting moon when she was young, and later, it
             "FPCost" => 55
         ],
         52 => [
-            "spellName" => "",
+            "spellName" => "Rock Blaster",
             "bonus" => "Stonedigger",
             "spellType" => "Sorceries",
             "description" => "One of the glintstone sorceries of the Academy of Raya Lucaria.<br>
@@ -1019,7 +1019,7 @@ sorcery.",
             "FPCost" => 25
         ],
         53 => [
-            "spellName" => "",
+            "spellName" => "Rock Sling",
             "bonus" => "Gravity",
             "spellType" => "Sorceries",
             "description" => "
@@ -1031,7 +1031,7 @@ A gravitational technique studied by the young Radahn. His master was an Alabast
             "FPCost" => 18
         ],
         54 => [
-            "spellName" => "",
+            "spellName" => "Roiling Magma",
             "bonus" => "Magma",
             "spellType" => "Sorceries",
             "description" => "One of the sorceries developed from the magma of Mt. Gelmir.<br>
@@ -1043,7 +1043,7 @@ After discovering the ancient hexes of Gelmir, Rykard, son of Queen Rennala, bro
             "FPCost" => 32
         ],
         55 => [
-            "spellName" => "",
+            "spellName" => "Rykard's Rancor",
             "bonus" => "Magma",
             "spellType" => "Sorceries",
             "description" => "The terrible power of Rykard, Lord of Blasphemy. <br>
@@ -1054,7 +1054,7 @@ These spirits manifest from the rancor of heroes who met a violent end. The lord
             "FPCost" => 35
         ],
         56 => [
-            "spellName" => "",
+            "spellName" => "Scholar's Armament",
             "bonus" => "???",
             "spellType" => "Sorceries",
             "description" => "One of the glintstone sorceries of the Academy of Raya Lucaria.<br>
@@ -1066,7 +1066,7 @@ Taught to the Knights of the Cuckoo by the academy as payment for their contract
             "FPCost" =>   25
         ],
         57 => [
-            "spellName" => "",
+            "spellName" => "Scholar's Shield",
             "bonus" => "???",
             "spellType" => "Sorceries",
             "description" => "One of the glintstone sorceries of the Academy of Raya Lucaria.<br>
@@ -1078,7 +1078,7 @@ Taught to the Knights of the Cuckoo by the academy as payment for their contract
             "FPCost" => 30
         ],
         58 => [
-            "spellName" => "",
+            "spellName" => "Shard Spiral",
             "bonus" => "Glintstone",
             "spellType" => "Sorceries",
             "description" => "One of the glintstone sorceries of the Academy of Raya Lucaria.<br>
@@ -1090,7 +1090,7 @@ A sorcery of the Karolos Conspectus, the most venerable of the academy. This was
             "FPCost" => 14
         ],
         59 => [
-            "spellName" => "",
+            "spellName" => "Shatter Earth",
             "bonus" => "Stonedigger",
             "spellType" => "Sorceries",
             "description" => "One of the glintstone sorceries of the Academy of Raya Lucaria.<br>
@@ -1102,7 +1102,7 @@ A Stonedigger sorcery used by the glintstone miners of the crystal tunnel. At th
             "FPCost" => 12
         ],
         60 => [
-            "spellName" => "",
+            "spellName" => "Shattering Crystal",
             "bonus" => "Crystalian",
             "spellType" => "Sorceries",
             "description" => "Sorcery of the mysterious Crystalians.<br>
@@ -1114,7 +1114,7 @@ The Crystalians are inorganic beings, yet they live. They cleave close to the id
             "FPCost" => 32
         ],
         61 => [
-            "spellName" => "",
+            "spellName" => "Star Shower",
             "bonus" => "Glintstone",
             "spellType" => "Sorceries",
             "description" => "One of the glintstone sorceries of the Academy of Raya Lucaria.<br>
@@ -1126,7 +1126,7 @@ The most difficult to master of the Olivinus Conspectus sorceries.",
             "FPCost" => 23
         ],
         62 => [
-            "spellName" => "",
+            "spellName" => "Starlight",
             "bonus" => "???",
             "spellType" => "Sorceries",
             "description" => "One of the glintstone sorceries of the Academy of Raya Lucaria.<br>
@@ -1138,7 +1138,7 @@ Granted to sorcerers who depart from the academy to embark on journeys. Even dur
             "FPCost" => 12
         ],
         63 => [
-            "spellName" => "",
+            "spellName" => "Stars of Ruin",
             "bonus" => "Lusat's Primeval Current",
             "spellType" => "Sorceries",
             "description" => "Legendary sorcery devised by Lusat, primeval sorcerers. <br>
@@ -1149,7 +1149,7 @@ When Lusat glimpsed into the primeval current, he beheld the final moments of a 
             "FPCost" => 38
         ],
         64 => [
-            "spellName" => "",
+            "spellName" => "Swift Glintstone Shard",
             "bonus" => "Glintstone",
             "spellType" => "Sorceries",
             "description" => "One of the glintstone sorceries of the Academy of Raya Lucaria.<br>
@@ -1161,7 +1161,7 @@ Those unworthy of the stone crown typically end their brief journey into sorcery
             "FPCost" => 5
         ],
         65 => [
-            "spellName" => "",
+            "spellName" => "Terra Magicus",
             "bonus" => "???",
             "spellType" => "Sorceries",
             "description" => "One of the glintstone sorceries of the Academy of Raya Lucaria.<br>
@@ -1172,7 +1172,7 @@ Once, the sigil would be cast from the highest belfry of the academy, covering t
             "FPCost" => 20
         ],
         66 => [
-            "spellName" => "",
+            "spellName" => "Thop's Barrier",
             "bonus" => "???",
             "spellType" => "Sorceries",
             "description" => "The lifelong pursuit of Thops the Bluntstone.<br>
@@ -1187,7 +1187,7 @@ academy.",
             "FPCost" => 7
         ],
         67 => [
-            "spellName" => "",
+            "spellName" => "Tibia's Summons",
             "bonus" => "Death",
             "spellType" => "Sorceries",
             "description" => "Sorcery of the servants of Death.<br>
@@ -1199,7 +1199,7 @@ The dead have long been left to wander; what they need is leadership.",
             "FPCost" => 20
         ],
         68 => [
-            "spellName" => "",
+            "spellName" => "Unseen blade",
             "bonus" => "Invisibility",
             "spellType" => "Sorceries",
             "description" => "One of the night sorceries of Sellia, Town of Sorcery.<br>
@@ -1211,7 +1211,7 @@ Used by Sellian assassins to present themselves as unarmed sorcerers.",
             "FPCost" => 18
         ],
         69 => [
-            "spellName" => "",
+            "spellName" => "Unseen Form",
             "bonus" => "Invisibility",
             "spellType" => "Sorceries",
             "description" => "One of the night sorceries of Sellia, Town of Sorcery.<br>
@@ -1224,7 +1224,7 @@ The Sellian assassins considered every option that aided their dirty work.",
             "FPCost" => 20
         ],
         70 => [
-            "spellName" => "",
+            "spellName" => "Zamor Ice Storm",
             "bonus" => "Cold",
             "spellType" => "Sorceries",
             "description" => "Ice sorcery of the Town of Zamor.<br>
