@@ -7,6 +7,28 @@ html {
     font-family: 'Spectral', serif;
 }
 
+body {
+    margin: 0;
+}
+
+header, footer {
+    color: gold;
+    text-align: center;
+    text-transform: uppercase;
+    background: transparent url("../images/others/spellNameBg.png");
+    background-size: cover;
+    padding: 20px;
+}
+
+header h1{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -1px;
+
+    margin: 0;
+}
+
 @media screen and (max-width: 655px) {
     #spellDetailsGoHere {
         position: sticky !important;
